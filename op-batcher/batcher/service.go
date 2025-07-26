@@ -449,7 +449,7 @@ func (bs *BatcherService) Stopped() bool {
 // Kill is a convenience method to forcefully, non-gracefully, stop the BatcherService.
 func (bs *BatcherService) Kill() error {
 	ctx, cancel := context.WithCancel(context.Background())
-	cancel()
+	defer cancel()
 	return bs.Stop(ctx)
 }
 
