@@ -43,26 +43,26 @@ remappings = [
   '@lib-keccak/=lib/lib-keccak/contracts/lib/',
   '@solady/=lib/solady/src/',
   '@solady-v0.0.245/=lib/solady-v0.0.245/src/',
-  'forge-std/=lib/forge-std/src',
-  'ds-test/=lib/forge-std/lib/ds-test/src',
-  'safe-contracts/=lib/safe-contracts/contracts',
-  'kontrol-cheatcodes/=lib/kontrol-cheatcodes/src',
+  'forge-std/=lib/forge-std/src/',
+  'ds-test/=lib/forge-std/lib/ds-test/src/',
+  'safe-contracts/=lib/safe-contracts/contracts/',
+  'kontrol-cheatcodes/=lib/kontrol-cheatcodes/src/',
   'interfaces/=interfaces/'
 ]
 
 fs_permissions = [
-  { access='read-write', path='./.resource-metering.csv' },
-  { access='read-write', path='./snapshots/' },
-  { access='read-write', path='./deployments/' },
-  { access='read', path='./deploy-config/' },
-  { access='read', path='./deploy-config-periphery/' },
-  { access='read', path='./broadcast/' },
-  { access='read', path = './forge-artifacts/' },
-  { access='read-write', path='./.testdata/' },
-  { access='read', path='./kout-deployment' },
-  { access='read', path='./test/fixtures' },
-  { access='read', path='./lib/superchain-registry/superchain/configs/' },
-  { access='read', path='./lib/superchain-registry/validation/standard/' },
+  { access = 'read-write', path = './.resource-metering.csv' },
+  { access = 'read-write', path = './snapshots/' },
+  { access = 'read-write', path = './deployments/' },
+  { access = 'read', path = './deploy-config/' },
+  { access = 'read', path = './deploy-config-periphery/' },
+  { access = 'read', path = './broadcast/' },
+  { access = 'read', path = './forge-artifacts/' },
+  { access = 'read-write', path = './.testdata/' },
+  { access = 'read', path = './kout-deployment' },
+  { access = 'read', path = './test/fixtures' },
+  { access = 'read', path = './lib/superchain-registry/superchain/configs/' },
+  { access = 'read', path = './lib/superchain-registry/validation/standard/' },
 ]
 
 # 5159 error code is selfdestruct error code
@@ -80,10 +80,10 @@ gas_limit = 9223372036854775807
 runs = 64
 
 [fmt]
-line_length=120
-multiline_func_header='all'
-bracket_spacing=true
-wrap_comments=true
+line_length = 120
+multiline_func_header = 'all'
+bracket_spacing = true
+wrap_comments = true
 
 ################################################################
 #                         PROFILE: CI                          #
